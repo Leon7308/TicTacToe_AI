@@ -1,6 +1,6 @@
 ### TicTacToe_AI
 
-tic_tac_toe.py - Minimax and alpha beta
+tic_tac_toe.py - Minimax and alpha beta  
 tic_tac_toe_RL.py - Q-Learning
 
 This project implements the game of Tic Tac Toe and uses two search algorithms and a reinforcement learning approach to choose the best move for the AI player. The two search algorithms used are minimax and alpha-beta pruning, and Q-Learning is used for Reinforcement Learning. The minimax algorithm searches through all possible moves and scores each move based on how likely it is to lead to a win for the AI player. The algorithm then selects the move with the highest score. The alpha-beta pruning algorithm is similar to minimax, but it tries to eliminate some of the branches that are guaranteed to be less optimal than others. This makes the alpha-beta pruning algorithm faster than the minimax algorithm in some cases but does not make a significant difference in our scenario.
