@@ -9,8 +9,8 @@ class TicTacToe:
         self.current_winner = None
 
 
-    def init_board():
-        return [" " for _ in range(9)]
+    # def init_board():
+    #     return [" " for _ in range(9)]
 
     # Print out board
     def print_board(self):
@@ -45,7 +45,6 @@ class TicTacToe:
         if " " not in self.board:
             return "Tie"
         # Game is still in progress
-        return None
 
     # Check who won
     def evaluate(self, ai_player, human_player):
@@ -56,6 +55,7 @@ class TicTacToe:
             return -1
         else:
             return 0
+
 
 # Minimax
 game = TicTacToe()
@@ -152,7 +152,7 @@ def play_game():
     current_player = ai_player
 
     while True:
-        if current_player == ai_player:
+        if (current_player == ai_player):
             print("AI's turn.")
             cell = ai_move(board, ai_player, human_player, AI)
         else:
@@ -176,5 +176,4 @@ AI = input("Choose method (using number): \n1. MiniMax\n2. Alpha Beta Pruning\n"
 play_game()
 
 
-# 
 # TicTacToe source https://geekflare.com/tic-tac-toe-python-code/
