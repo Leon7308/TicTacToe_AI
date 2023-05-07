@@ -26,7 +26,7 @@ Problems – Both these approaches aren’t perfect. I failed to implement a bet
 Test Results and conclusion
 The approaches make for a fun Tic Tac Toe opponent which make optimal moves. In the future, I would like to make a more conclusive evaluation function for minimax and make a UI using Tkinter for a more immersive experience.
  
-# References
+### References
 1.	TicTacToe source - https://geekflare.com/tic-tac-toe-python-code/
 2.	QLearning - https://towardsdatascience.com/a-beginners-guide-to-q-learning-c3e2a30a653c 
 3.	Minimax and alphabeta pruning - https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/ 
