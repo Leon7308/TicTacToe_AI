@@ -14,7 +14,7 @@ Minimax is a decision-making algorithm that is used to determine the optimal mov
 Alpha-beta pruning is an optimization technique used in conjunction with Minimax algorithm to reduce the number of nodes that are evaluated by the Minimax algorithm in its search tree. This allows us to search much faster and even go into deeper levels in the game tree.
 Q-learning is a reinforcement learning algorithm that can be used to train an agent to play Tic Tac Toe. It works by assigning a reward value to each state-action pair and updating these values based on feedback from the environment. The agent then uses these values to choose its next move.
 
-### Implementation (include difficulties)
+### Implementation
 
 For the implementation of the minimax/ alphabeta pruning, I used a TicTacToe class to have all the TicTacToe functions in order to make a working game. I then used ‘minimax’ and ‘alphabeta’ functions to evaluate the best possible move and returned it as the AI move. We use the evaluate function to get a best move where AI wins. 
  
@@ -27,11 +27,12 @@ The Q-Learning agent's get_move method first checks if the agent should explore 
 If the current state is not in the agent's Q-Table, the agent adds a new row to the table for the current state and initializes all entries to 0. If the current state is already in the agent's Q-Table, the agent selects the action with the highest Q-Value for that state.
 After the agent selects its move, it returns the index of the chosen square to the game, which then makes the move. The game then calculates the reward of the move, which is 0 if the game is ongoing, 1 if the agent wins, and -1 if the agent loses. If the game ends, the Q-Learning agent updates its Q-Table based on the reward it received for each action it took during the game using the Q-Learning algorithm's update rule.At the end of the training phase, the Q-Learning agent should have a Q-Table that reflects the optimal action-selection policy for any given state of the game. The agent can then use this table to play the game optimally.
 
-Problems – Both these approaches aren’t perfect. I failed to implement a better evaluation function for minimax which could potentially give much more optimal moves. The reinforcement learning model is also easy to beat with a few moves. Both methods could be updated for a more challenging AI.
-Test Results and conclusion
+### Test Results and conclusion
+
 The approaches make for a fun Tic Tac Toe opponent which make optimal moves. In the future, I would like to make a more conclusive evaluation function for minimax and make a UI using Tkinter for a more immersive experience.
  
 ### References
+
 1.	TicTacToe source - https://geekflare.com/tic-tac-toe-python-code/
 2.	QLearning - https://towardsdatascience.com/a-beginners-guide-to-q-learning-c3e2a30a653c 
 3.	Minimax and alphabeta pruning - https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/ 
